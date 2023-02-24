@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BBC COCKTAIL</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="app">
-        <form action="">
-            <label for="ingredient1">Ingredient 1</label>
-            <input type="text" id="ingredient1">
-            <label for="ingredient2">Ingredient 2</label>
-            <input type="text" id="ingredient2">
-            <label for="ingredient3">Ingredient 3</label>
-            <input type="text" id="ingredient3">
-        </form>
+      <header>
+        <h1>BBC</h1>
+      <span>Bottle Bottom Cocktails</span>
+      </header>
+      <form id="form">
+        <label for="ingredient1">Ingredient 1</label>
+        <input type="text" id="ingredient1" placeholder="ex: rum" />
+        <label for="ingredient2">Ingredient 2</label>
+        <input type="text" id="ingredient2" placeholder="ex: cola" />
+        <label for="ingredient3">Ingredient 3</label>
+        <input type="text" id="ingredient3" placeholder="ex: syrup" />
+        <div class="button-container">
+          <button id="go" type="submit">Go !</button>
+          <button id="reset">Reset</button>
+        </div>
+      </form>
 
-        <div class="cocktail-container"></div>
-
+      <div class="cocktail-container">
+        <h2>Do you fancy a cocktail ?</h2>
+        <p>
+          Look at the bottom of your cupboards and your fridge and take out your bottle bottoms.
+        </p>
+        <p>
+          Fill in between one and three ingredients you found and see what you can do with them.
+        </p>
+        <p>
+          Buy only what you need and let's go !
+        </p>
+        <p id="advert">Alcohol is dangerous for your health, consume in moderation</p>
+        <span id="name">Dev and design <a href="https://www.linkedin.com/in/geoffrey-de-barros-1430a7255/" target="_blank">DE BARROS Geoffrey</a></span>
+      </div>
     </div>
 
     <script src="./index.js"></script>
-
-</body>
+  </body>
 </html>
