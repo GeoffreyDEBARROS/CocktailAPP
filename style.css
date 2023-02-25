@@ -13,13 +13,14 @@ body {
 header {
     background: #403D39;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 h1 {
     text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
     color: #fff6a9;
     font-size: 2.5rem;
     letter-spacing: 10px;
+    margin-bottom: 10px;
 }
 
 /* Form Part */
@@ -90,6 +91,7 @@ h2 {
     text-align: center;
     margin: 20px;
 }
+
 p {
     margin: 8px;
     font-weight: bold;
@@ -111,13 +113,16 @@ h3 {
     padding: 10px;
     text-align: center;
 }
+.resetH3 {
+    border: 3px solid #ffa500;
+}
 /* Cards Part */
 
 .cocktail-container {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     padding: 10px;
+    background: #F7FFF7;
 }
 .card {
     border-bottom: 2px solid #ff8d00;
@@ -138,3 +143,50 @@ h3 {
 }
 /* // // */
 
+@media screen and (min-width:600px) {
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "l1 l2 l3"
+        "i1 i2 i3"
+        "btn btn btn"
+        ;
+    }
+    #l1 {
+        grid-area: l1;
+    }
+    #l2 {
+        grid-area: l2;
+    }
+    #l3 {
+        grid-area: l3;
+    }
+    label {
+        justify-self: center;
+    }
+    input {
+        width: 80%;
+        max-width: 230px;
+        justify-self: center;
+    }
+    .button-container {
+        grid-area: btn;
+        justify-content: space-evenly;
+    }
+}
+
+
+@media screen and (min-width:1000px) {
+   .button-container {
+        justify-content: center;
+        width: 100%;
+   }
+   button {
+    margin: 0 40px;
+   }
+   p {
+    text-align: center;
+   }
+}

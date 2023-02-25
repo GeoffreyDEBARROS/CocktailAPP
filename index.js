@@ -65,7 +65,7 @@ form.addEventListener("submit", (event) => {
 
 const clearCocktailContainer = () => {
   const cocktailContainer = document.querySelector(".cocktail-container");
-  cocktailContainer.innerHTML = "";
+  cocktailContainer.innerHTML = `<h3 class="resetH3">Indicate between one and three ingredients and find out which cocktails you can make !</h3>`;
   firstIngredient.value = "";
   secondIngredient.value = "";
   thirdIngredient.value = "";
